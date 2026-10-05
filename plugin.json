@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "idea-reality-check",
+  "version": "0.1.1",
+  "description": "Stress-test product ideas against real-world evidence before building.",
+  "homepage": "https://github.com/hzy7003-bit/idea-reality-check",
+  "repository": "https://github.com/hzy7003-bit/idea-reality-check",
+  "license": "MIT",
+  "keywords": [
+    "product ideas",
+    "product research",
+    "prior art",
+    "product validation",
+    "reality check"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Idea Reality Check",
+        "shortDescription": "Stress-test product ideas",
+        "longDescription": "Investigate whether a product idea addresses a real user problem before building. Separate the problem from the proposed solution; research existing products and prior art; test hidden assumptions against user behavior and real-world constraints; examine why similar solutions have not become mainstream; compare simpler alternatives; and recommend the cheapest next experiment. Findings depend on accessible sources and are not legal, patent freedom-to-operate, or investment advice.",
+        "developerName": "hzy7003-bit",
+        "category": "Business & Operations",
+        "websiteURL": "https://github.com/hzy7003-bit/idea-reality-check",
+        "supportURL": "https://github.com/hzy7003-bit/idea-reality-check/issues",
+        "privacyPolicyURL": "https://github.com/hzy7003-bit/idea-reality-check/blob/main/PRIVACY.md",
+        "defaultPrompt": [
+          "Stress-test my product idea before I build it.",
+          "Separate the problem I observed from the solution I proposed.",
+          "Find the cheapest experiment to test my riskiest assumption."
+        ],
+        "brandColor": "#263F61",
+        "brandColorDark": "#8FD8C1",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Package v0.1.1 adds portable Agent Plugins packaging and submission metadata around the existing v0.1 Skill. The shared SKILL.md and analysis workflow are unchanged. No MCP server or backend is included.",
+        "translations": {
+          "zh-CN": {
+            "subtitle": "用证据压力测试产品创意",
+            "description": "在投入开发前，用真实需求、现有方案、专利与 prior art、用户行为和现实约束检验产品创意。区分问题与解决方案，审视隐藏假设和更简单的替代方案，并推荐最低成本实验。结论受可访问资料影响，不构成法律、专利自由实施或投资意见。"
+          }
+        }
+      }
+    }
+  }
+}
